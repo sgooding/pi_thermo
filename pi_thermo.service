@@ -1,0 +1,11 @@
+[Unit]
+Description=Pi Thermometer Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python -u /home/pi/src/pi_thermo/publish_thingspeak.py > /home/pi/src/log/pi_thermo.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
+
