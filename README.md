@@ -31,4 +31,6 @@ sudo systemctl enable pi_thermo.service
 sudo reboot
 ```
 
+## Temperature Analysis Reference
+https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/
 
